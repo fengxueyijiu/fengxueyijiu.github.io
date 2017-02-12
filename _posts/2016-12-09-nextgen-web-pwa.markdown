@@ -2,7 +2,7 @@
 layout:     post
 title:      "下一代 Web 应用模型 —— Progressive Web App"
 subtitle:   "The Next Generation Application Model For The Web - Progressive Web App"
-date:       2017-02-11 12:00:00
+date:       2016-12-09 12:00:00
 author:     "Strom"
 header-img: "img/post-bg-nextgen-web-pwa.jpg"
 header-mask: 0.3
@@ -361,7 +361,7 @@ PWA 作为一个涵盖性术语，与过往的这些或多或少通过私有平�
 
 **让我们的用户，也像我们这般热爱 web 吧。**
 
-黄玄，于 12 月的北京。
+吴建波，于 12 月的北京。
 
 ---
 
