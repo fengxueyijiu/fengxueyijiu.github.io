@@ -2,8 +2,8 @@
 layout:     post
 title:      "下一代 Web 应用模型 —— Progressive Web App"
 subtitle:   "The Next Generation Application Model For The Web - Progressive Web App"
-date:       2017-02-09 12:00:00
-author:     "Hux"
+date:       2017-02-11 12:00:00
+author:     "Strom"
 header-img: "img/post-bg-nextgen-web-pwa.jpg"
 header-mask: 0.3
 catalog:    true
@@ -14,8 +14,6 @@ tags:
 ---
 
 
-
-> 本文首发于[《程序员》](http://geek.csdn.net/news/detail/135595)，发布于 [Hux Blog](https://huangxuan.me)、[前端外刊评论](https://zhuanlan.zhihu.com/FrontendMagazine)，转载请保留链接 ;)
 
 
 ## 下一代 Web 应用？
@@ -48,7 +46,7 @@ Progressive Web Apps（以下简称 PWA）以及构成 PWA 的一系列关键技
 
 **无需担心网络延迟；有着独立入口与独立的保活机制。**之前两个问题的一并解决，宣告着 web 应用在移动设备上的浴火重生：满足 PWA 模型的 web 应用，将逐渐成为移动操作系统的一等公民，并将向原生应用发起挑战与「复仇」。
 
-更令笔者兴奋的是，就在今年 11 月的 [Chrome Dev Summit 2016][18] 上，Chrome 的工程 VP Darin Fisher 介绍了 Chrome 团队正在做的一些实验：把「添加至主屏」重命名为「安装」，被安装的 PWA 不再仅以 widget 的形式显示在桌面上，而是真正做到与所有原生应用平级，一样被收纳进应用抽屉（App Drawer）里，一样出现在系统设置中 🎉🎉🎉。 
+更令笔者兴奋的是，就在今年 11 月的 [Chrome Dev Summit 2016][18] 上，Chrome 的工程 VP Darin Fisher 介绍了 Chrome 团队正在做的一些实验：把「添加至主屏」重命名为「安装」，被安装的 PWA 不再仅以 widget 的形式显示在桌面上，而是真正做到与所有原生应用平级，一样被收纳进应用抽屉（App Drawer）里，一样出现在系统设置中 🎉🎉🎉。
 
 ![](/img/in-post/post-nextgen-web-pwa/flipkart-3.jpeg)
 *图片来源: Hux & [@adityapunjani][i4]*
@@ -65,7 +63,7 @@ Web App Manifest，即通过一个清单文件向浏览器暴露 web 应用的�
 
 让 web 应用在移动设备上的体验更接近原生应用的尝试其实早在 2008 年的 [iOS 1.1.3 与 iOS 2.1.0 ][q37]时就开始了，它们分别为 web 应用增加了对自定义 icon 和全屏打开的支持。
 
-![](/img/in-post/post-nextgen-web-pwa/ios2-a2hs.gif) 
+![](/img/in-post/post-nextgen-web-pwa/ios2-a2hs.gif)
 *图片来源: [appleinsider.com][i1]*
 
 但是很快，随着越来越多的私有平台通过 `<meta>`/`<link>` 标签来为 web 应用添加「私货」，`<head>` 很快就被塞满了：
@@ -188,7 +186,7 @@ HTML5 App Cache 作为第二波「让 web 应用离线执行」的尝试，确�
 比如说，我们可以给网页 `foo.html` 注册这么一个 Service Worker，它将劫持由 `foo.html` 发起的一切 HTTP 请求，并统统返回未设置 `Content-Type` 的 `Hello World!`：
 
 ```javascript
-// sw.js 
+// sw.js
 self.onfetch = (e) => {
   e.respondWith(new Response('Hello World!'))
 }
@@ -241,7 +239,7 @@ self.onfetch = (e) => {
 
 
 
-### Push Notification 
+### Push Notification
 
 PWA 推送通知中的「推送」与「通知」，其实使用的是两个不同但又相得益彰的 API：
 
@@ -420,7 +418,7 @@ PWA 作为一个涵盖性术语，与过往的这些或多或少通过私有平�
 
 [25]: https://developers.google.com/web/fundamentals/engage-and-retain/push-notifications/ "Web Push Notifications - Google Developer"
 
-[26]: https://en.wikipedia.org/wiki/Progressive_web_app#Hybrid_Apps 
+[26]: https://en.wikipedia.org/wiki/Progressive_web_app#Hybrid_Apps
 
 [27]: http://phonegap.com/blog/2012/05/09/phonegap-beliefs-goals-and-philosophy/ "PhoneGap Beliefs, Goals, and Philosophy"
 
@@ -458,7 +456,7 @@ PWA 作为一个涵盖性术语，与过往的这些或多或少通过私有平�
 
 [44]: https://medium.com/@owencm/the-surprising-tradeoff-at-the-center-of-question-whether-to-build-an-native-or-web-app-d2ad00c40fb2#.ym83ct2ax "The surprising tradeoff at the center of the question whether to build a Native or Web App"
 
-[45]: http://zhihu.com/question/31316032/answer/75236718 
+[45]: http://zhihu.com/question/31316032/answer/75236718
 
 [46]: https://www.zhihu.com/question/46690207/answer/104851767
 
@@ -498,7 +496,7 @@ PWA 作为一个涵盖性术语，与过往的这些或多或少通过私有平�
 
 [i2]: https://developers.google.com/web/events/pwaroadshow/
 
-[i3]: https://medium.com/@AdityaPunjani/building-flipkart-lite-a-progressive-web-app-2c211e641883#.hz4d3kw41 "Building Flipkart Lite: A Progressive Web App" 
+[i3]: https://medium.com/@AdityaPunjani/building-flipkart-lite-a-progressive-web-app-2c211e641883#.hz4d3kw41 "Building Flipkart Lite: A Progressive Web App"
 
 [i4]: https://twitter.com/adityapunjani
 
