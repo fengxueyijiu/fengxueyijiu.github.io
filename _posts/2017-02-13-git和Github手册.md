@@ -4,7 +4,7 @@ title:      "Git和Github基本操作手册"
 subtitle:   "Git and Github basic operating manual"
 date:       2017-2-13 12:00:00
 author:     "Strom"
-header-img: "img/home-bg-o.jpg"
+header-img: "img/home-bg-art.jpg"
 ---
 
 Git 及 Github 在工作学习中非常重要，它不仅仅是一个管理存放代码的仓库，更是一个开源的社区。学习Git及Github的操作是首要技能。
