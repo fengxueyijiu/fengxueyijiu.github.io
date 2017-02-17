@@ -18,7 +18,7 @@ $ sudo passwd root
 输入密码(一般和ubuntu密码一样，方便记忆)
 
 ```
-![root](img/rootpasswd.png)
+![root](../img/rootpasswd.png)
 
 <b>2.修改ssh配置</b>
 
@@ -28,7 +28,7 @@ sudo vim /etc/ssh/sshd_config
 ```
 找到  PermitRootLogin 这项 将其改为 yes
 
-![ssh](img/ssh.png)
+![ssh](../img/ssh.png)
 
 保存退出并重启ssh服务既可。
 
