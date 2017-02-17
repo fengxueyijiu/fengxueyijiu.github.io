@@ -2,7 +2,7 @@
 layout:     post
 title:      "nginx服务器搭建https"
 subtitle:   "Nginx server to build https"
-date:       2017-2-17 12:00:00
+date:       2017-2-1６ 12:00:00
 author:     "Strom"
 header-img: "img/home-bg-art.jpg"
 ---
