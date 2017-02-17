@@ -3,7 +3,7 @@ layout:     post
 title:      "Ubuntu设置允许root用户登陆"
 subtitle:   "
 Ubuntu settings allow root users to log in"
-date:       2017-2-1４ 12:00:00
+date:       2017-2-14 12:00:00
 author:     "Strom"
 header-img: "img/home-bg-art.jpg"
 ---
