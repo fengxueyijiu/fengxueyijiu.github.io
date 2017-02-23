@@ -1,9 +1,105 @@
 ---
 layout:     post
-title:      "解决启动mongod 时，出现addr already in use错误"
-subtitle:   "Ubuntu settings allow root users to log in"
+title:      "appcan 的简单操作"
+subtitle:   "Appcan simple operation"
 date:       2017-2-22 12:00:00
 author:     "Strom"
 header-img: "img/home-bg-art.jpg"
 ---
-![img](/img/in-post/post-alitrip-pd/post-alitrip-pd.013.jpg)
+
+
+
+
+#### 1、开发环境
+[开发者工具下载appcan ide](http://newdocx.appcan.cn/IDE/download)
+
+#### 2、在AppCan的官方网站上创建应用，并在IDE中开发完成后，到官网上进行打包。
+
+1）、注册并登陆AppCan应用管理系统（http://dashboard.appcan.cn/app ）。
+2）、点击开发下的创建应用。
+
+  ![创建应用](http://newdocx.appcan.cn/docximg/201601/tianqi1.png)
+3）、 输入你的应用名称，和应用描述，然后保存。会跳到如下页面
+![等等](http://newdocx.appcan.cn/docximg/201601/tianqi3.png)
+
+4）、打开AppCan IDE，并用刚才注册的用户登陆
+
+![dd](http://newdocx.appcan.cn/docximg/180306y2014g9c22s.jpg)
+5）、登录进入IDE
+![dd](http://newdocx.appcan.cn/docximg/180313v2014n9b22t.jpg)
+7）、点击新建项目
+
+![dd](http://newdocx.appcan.cn/docximg/180321y2014g9u22k.jpg)
+8）、选择同步AppCan 项目，点击下一步。页面会跳到如下页面
+![dd](http://newdocx.appcan.cn/docximg/180328d2014i9x22u.jpg)
+9）、选择天气点击完成。
+
+![等等](http://newdocx.appcan.cn/docximg/180338e2014i9i22u.jpg)
+10）、整个应用创建完成了。
+#### 3、 应用开发
+1) 、打开index.html页面加入应用头部，我们的头部都是统一的，所以加入一下代码
+
+ ```
+ <!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>strom's blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./dist/bundle.js"></script>
+  </body>
+</html>
+
+ ```
+删除默认的背景图片，你也可也在css中修改，index/css/main.css
+
+2）、在phone/加入dist/bundle.js和678c323096483c1600d15451c29f7f38.jpg
+
+
+#### 4、应用打包
+
+开发完成打包应用有两种方式，一种是本地打包，一种是线上打包。
+
+4.1、本地打包（仅供测试使用）
+
+1）、点击发行
+
+![dd](http://newdocx.appcan.cn/docximg/180435r2014p9g22f.jpg)
+
+或者右键点击phone，然后点击生成安装包
+
+![dd](http://newdocx.appcan.cn/docximg/180445y2014g9s22l.jpg)
+
+2）、可以修改应用名称，上传图标，我们使用默认的然后点击下一步
+
+![dd](http://newdocx.appcan.cn/docximg/180451l2014m9l22x.jpg)
+3）、选择要生成的平台，启动画面点击下一步
+
+![dd](http://newdocx.appcan.cn/docximg/180501v2014o9g22w.jpg)
+4）、选择需要的插件然后点击完成。等待打包如果打包完成就会自动打开应用目录。
+
+![dd](http://newdocx.appcan.cn/docximg/180512p2014s9z22t.jpg)
+4.2、线上打包
+
+1）、点击右键把代码提交的服务器
+![dd](http://newdocx.appcan.cn/docximg/180523b2014q9b22f.jpg)
+2）、选择要提交的文件。点击ok
+
+![dd](http://newdocx.appcan.cn/docximg/180533r2014z9b22m.jpg)
+3）、选择应用进入详情页面，并点击应用开发，进入应用开发页面
+
+![dd](http://newdocx.appcan.cn/docximg/201601/tianqi4.png)
+4）、点击应用打包，点击图标设置可以修改图标，点击启动页面可以修改启动页面，然后选择插件，证书，最后点击云端打包。
+
+5）、选择平台和版本号，点击生成安装包。
+
+![dd](http://newdocx.appcan.cn/docximg/201601/tianqi5.jpg)
+6）、等待打包完成，可以下载生成的安装包了，点击下一步进入应用详情页面。
+![dd](http://newdocx.appcan.cn/docximg/164638g2014v9y23i.jpg)
+![dd](http://newdocx.appcan.cn/docximg/180816y2014t9s22q.jpg)
+
+#### 5、扫码就可以安装到手机了
