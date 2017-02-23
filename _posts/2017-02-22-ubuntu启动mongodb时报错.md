@@ -11,6 +11,7 @@ header-img: "img/home-bg-art.jpg"
 
 
 #### 1、开发环境
+
 [开发者工具下载appcan ide](http://newdocx.appcan.cn/IDE/download)
 
 #### 2、在AppCan的官方网站上创建应用，并在IDE中开发完成后，到官网上进行打包。
@@ -36,7 +37,9 @@ header-img: "img/home-bg-art.jpg"
 
 ![等等](http://newdocx.appcan.cn/docximg/180338e2014i9i22u.jpg)
 10）、整个应用创建完成了。
+
 #### 3、 应用开发
+
 1) 、打开index.html页面加入应用头部，我们的头部都是统一的，所以加入一下代码
 
  ```
