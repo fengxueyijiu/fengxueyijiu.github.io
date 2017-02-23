@@ -7,7 +7,7 @@ author:     "Strom"
 header-img: "img/home-bg-art.jpg"
 ---
 
-由于腾讯云主机ubuntu系统默认用户名为ubuntu，不喜欢每次做什么都要sudo一下，故设置开启允许root用户登录
+<!-- 由于腾讯云主机ubuntu系统默认用户名为ubuntu，不喜欢每次做什么都要sudo一下，故设置开启允许root用户登录
 方法如下：
 
 <b>1.修改root密码</b>
@@ -35,6 +35,6 @@ sudo vim /etc/ssh/sshd_config
 ```
 sudo service ssh  restart
 
-```
+``` -->
 
 好了，到这就完成了，下次就可以直接用root用户登陆。
