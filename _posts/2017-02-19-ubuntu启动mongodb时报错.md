@@ -20,7 +20,6 @@ Sat Aug 17 09:02:02 [initandlisten] ERROR:   addr already in use
 ```
 
 原因是启动mongod时端口被占用。
-
 <b> 解决办法：</b>
 
 使用命令 root@VM-118-87-ubuntu:/usr/bin# netstat -anp|more
